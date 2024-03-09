@@ -1,0 +1,6 @@
+node_modules
+*.scss
+package-lock.json
+package.json
+craco.config.js
+README.md

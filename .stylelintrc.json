@@ -1,0 +1,11 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "unit-allowed-list": ["%", "px", "dvh", "dvw", "svh", "svw", "deg"],
+    "media-feature-range-notation": null,
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-order": ["position", "display", "width", "height"]
+  }
+}
