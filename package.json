@@ -15,6 +15,7 @@
     "sass": "^1.71.1"
   },
   "devDependencies": {
+    "@types/node": "^20.11.25",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
@@ -31,6 +32,18 @@
     "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-order": "^6.0.4",
     "typescript": "^5.2.2",
+    "typescript-plugin-css-modules": "^5.1.0",
     "vite": "^5.1.4"
+  },
+  
+  "resolve-path-alias": {
+    "alias": {
+      "@app/*": "src/01_app/*",
+      "@pages/*": "src/02_pages/*",
+      "@widgets/*": "src/03_widgets/*",
+      "@features/*": "src/04_features/*",
+      "@entities/*": "src/05_entities/*",
+      "@shared/*": "src/06_shared/*"
+    }
   }
 }

@@ -18,7 +18,19 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/01_app/*"],
+      "@pages/*": ["src/02_pages/*"],
+      "@widgets/*": ["src/03_widgets/*"],
+      "@features/*": ["src/04_features/*"],
+      "@entities/*": ["src/05_entities/*"],
+      "@shared/*": ["src/06_shared/*"],
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
