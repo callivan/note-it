@@ -1,16 +1,17 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true, node: 'current' },
+  env: { browser: true, es2020: true, node: 'current', 'jest/globals': true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     'plugin:sonarjs/recommended',
     'prettier',
+    'plugin:jest/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', 'sonarjs', 'simple-import-sort'],
+  plugins: ['react-refresh', 'sonarjs', 'simple-import-sort', 'jest'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'simple-import-sort/imports': 'error',
