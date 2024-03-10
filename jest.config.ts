@@ -17,6 +17,12 @@ const config: Config = {
   moduleNameMapper: {
     '^.+\\.svg$': 'jest-svg-transformer',
     '^.+\\.(css|less|sass|scss)$': 'identity-obj-proxy',
+    '^@app(.*)$': '<rootDir>/src/01_app$1',
+    '^@pages(.*)$': '<rootDir>/src/01_pages$1',
+    '^@widgets(.*)$': '<rootDir>/src/02_widgets$1',
+    '^@features(.*)$': '<rootDir>/src/03_features$1',
+    '^@entities(.*)$': '<rootDir>/src/04_entities$1',
+    '^@shared(.*)$': '<rootDir>/src/04_shared$1',
   },
 
   verbose: true,
