@@ -1,3 +1,5 @@
+import '@shared/styles/variables.scss';
+
 import { App } from '@app/index';
 import ReactDOM from 'react-dom/client';
 
