@@ -13,7 +13,8 @@
     "stylelint:fix": "stylelint \"./src/**/*.scss\" --aei --fix",
     "prettier": "prettier --check ./src",
     "prettier:fix": "prettier --write ./src",
-    "test": "jest --notify --passWithNoTests"
+    "test": "jest --notify --passWithNoTests",
+    "prepare": "husky"
   },
   "husky": {
     "hooks": {
