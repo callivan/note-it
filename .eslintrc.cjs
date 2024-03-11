@@ -19,5 +19,6 @@ module.exports = {
     'no-unused-vars': 'warn',
     'sort-imports': 'off',
     'import/order': 'off',
+    'jest/expect-expect': 'off',
   },
 };
