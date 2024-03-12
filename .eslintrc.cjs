@@ -9,7 +9,7 @@ module.exports = {
     'prettier',
     'plugin:jest/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'templates/*'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'sonarjs', 'simple-import-sort', 'jest'],
   rules: {

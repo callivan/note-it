@@ -8,6 +8,7 @@ const config: Config = {
   testEnvironment: 'jsdom',
 
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  testPathIgnorePatterns: ['/node_modules/', '<rootDir>/templates/*'],
 
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
